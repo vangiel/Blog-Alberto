@@ -1,0 +1,24 @@
+//Paleta de color
+
+$color1 : #13AF2C;
+$color2 : #14B95E;
+$color3 : #1AA27D;
+$colorComp : #14B7B9;
+
+//Media queries
+
+$breakpoints : (
+    s  : 0,
+    m  : 640px,
+    l  : 1024px,
+    xl : 1440px
+);
+
+//Estilos generales
+
+@import "components/normalize";
+
+
+//Components
+
+@import "components/header";
