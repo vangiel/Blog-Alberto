@@ -1,9 +1,9 @@
 //Paleta de color
 
-$color1 : #13AF2C;
-$color2 : #14B95E;
-$color3 : #1AA27D;
-$colorComp : #14B7B9;
+$color1 : #4C7520;
+$color2 : #C0D028;
+$color3 : #88AC2E;
+$colorComp : #2980b9;
 
 //Media queries
 
@@ -22,3 +22,5 @@ $breakpoints : (
 //Components
 
 @import "components/header";
+@import "components/main-menu";
+@import "components/grid-blog";

@@ -1,0 +1,37 @@
+ul.main-menu{
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-around;
+  background-color: $color3;
+  
+  li{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    list-style: none;
+    border-right: 1px solid white;
+
+    &:last-child{
+      border: none;
+    }
+
+    a{
+
+      display: block;
+
+      line-height: 3em;
+      text-decoration: none;
+
+      color: #FFF;
+    }
+    
+    a.active{
+      background: #FFF;
+      color: $color3;
+    }
+  }
+
+}
