@@ -1,12 +1,14 @@
 extends templates/template
 
 block menu
-  nav#main-menu
+  nav.main-nav
     ul.main-menu
       li: a(href="index.html").active Inicio
       li: a(href="#") Articulos
       li: a(href="#") Sobre mi
       li: a(href="#") Contacto
 
+
 block entradasBlog
-  main.grid-blog
+  main#main-blog.grid-blog
+

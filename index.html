@@ -9,19 +9,13 @@ Created by Daniel on 15/02/2017.
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    <link href="https://file.myfontastic.com/F3BqZShwjqEehCviZBwyBm/icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/mainStyles.css">
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
   </head>
   <body>
-    <header><img src="img/portada.jpeg" alt="imagen de trading">
-      <div class="header-title__container">
-        <h1 class="header__title">Blog de Alberto</h1>
-        <p class="header__copy">Talis, raptus cobaltums tandem perdere de castus, gratis liberi. Decors sunt abactuss de teres extum. Est camerarius indictio, cesaris. Eleatess sunt idoleums de fidelis victrix. Domesticus, peritus rationes foris manifestum de dexter, germanus terror. Congregabo rare ducunt ad noster boreas. Sunt poetaes tractare superbus, peritus lixaes. Ubi est castus lixa? Experimentum mechanice ducunt ad varius era. A falsis, poeta varius tabes. A falsis, animalis brevis brodium. Bassus, raptus racanas patienter prensionem de pius, nobilis exsul.</p>
-      </div>
-      <div class="header-continue">
-        <div class="continue__title">Ver el Blog</div><a class="continue__button" href="#main-menu"></a>
-      </div>
-    </header>
-    <nav id="main-menu">
+    <nav class="main-nav">
       <ul class="main-menu">
         <li><a class="active" href="index.html">Inicio</a></li>
         <li><a href="#">Articulos</a></li>
@@ -29,6 +23,16 @@ Created by Daniel on 15/02/2017.
         <li><a href="#">Contacto</a></li>
       </ul>
     </nav>
-    <main class="grid-blog"></main>
+    <header><img src="img/portada.jpeg" alt="imagen de trading">
+      <div class="header-title__container">
+        <h1 class="header__title">Blog de Alberto</h1>
+        <p class="header__copy">Talis, raptus cobaltums tandem perdere de castus, gratis liberi. Decors sunt abactuss de teres extum. Est camerarius indictio, cesaris. Eleatess sunt idoleums de fidelis victrix. Domesticus, peritus rationes foris manifestum de dexter, germanus terror. Congregabo rare ducunt ad noster boreas. Sunt poetaes tractare superbus, peritus lixaes. Ubi est castus lixa? Experimentum mechanice ducunt ad varius era. A falsis, poeta varius tabes. A falsis, animalis brevis brodium. Bassus, raptus racanas patienter prensionem de pius, nobilis exsul.</p>
+      </div>
+      <div class="header-continue">
+        <div class="continue__title">Ver el Blog</div><a class="icon-down continue__button" href="#main-blog"></a>
+      </div>
+    </header>
+    <main class="grid-blog" id="main-blog"></main>
+    <script src="js/anchor.js"></script>
   </body>
 </html>

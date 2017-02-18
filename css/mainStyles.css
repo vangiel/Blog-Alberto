@@ -424,19 +424,31 @@ header {
     position: absolute;
     text-align: center;
     width: 70%;
-    top: 20%;
+    top: 10%;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
     header .header-title__container h1.header__title {
       color: #2980b9;
-      margin-bottom: 2em;
-      font-size: 3em;
-      font-family: 'roboto'; }
+      margin: 0;
+      text-shadow: 0 0 20px #164666;
+      margin-bottom: 70px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      font-size: 4em;
+      font-family: 'roboto', sans-serif; }
     header .header-title__container p.header__copy {
+      color: #4C7520;
+      padding: .9em;
+      margin: auto;
+      max-width: 500px;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 10px 2px #FFF;
       text-align: justify;
-      text-indent: 25px; }
+      text-indent: 25px;
+      line-height: 1.2em;
+      font-family: 'Pangolin',sans-serif; }
   header .header-continue {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -456,31 +468,34 @@ header {
     header .header-continue .continue__title {
       color: #C0D028;
       font-size: 2em;
-      margin-bottom: 5px; }
+      margin-bottom: 10px; }
     header .header-continue a.continue__button {
-      display: block;
-      width: 50px;
+      position: relative;
+      color: red;
+      font-size: 5em;
       height: 50px;
-      border-right: 5px solid red;
-      border-bottom: 5px solid red;
+      overflow: hidden;
       -webkit-animation: botar .8s ease-in infinite alternate;
       animation: botar .8s ease-in infinite alternate; }
 
 @-webkit-keyframes botar {
   from {
-    -webkit-transform: translateY(0) rotate(45deg);
-    transform: translateY(0) rotate(45deg); }
+    top: 0; }
   to {
-    -webkit-transform: translateY(-20px) rotate(45deg);
-    transform: translateY(-20px) rotate(45deg); } }
+    top: -20px; } }
 
 @keyframes botar {
   from {
-    -webkit-transform: translateY(0) rotate(45deg);
-    transform: translateY(0) rotate(45deg); }
+    top: 0; }
   to {
-    -webkit-transform: translateY(-20px) rotate(45deg);
-    transform: translateY(-20px) rotate(45deg); } }
+    top: -20px; } }
+
+nav.main-nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100; }
 
 ul.main-menu {
   margin: 0;
@@ -512,4 +527,4 @@ ul.main-menu {
 
 main.grid-blog {
   height: 100vh;
-  background-color: #AAA; }
+  background-color: rgba(192, 208, 40, 0.7); }

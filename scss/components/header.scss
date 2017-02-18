@@ -25,20 +25,32 @@ header{
     position: absolute;
     text-align: center;
     width: 70%;
-    top: 20%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
 
     h1.header__title{
       color: $colorComp;
-      margin-bottom: 2em;
-      font-size: 3em;
-      font-family: 'roboto';
+      margin: 0;
+      text-shadow: 0 0 20px darken($colorComp,20);
+      margin-bottom: 70px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      font-size: 4em;
+      font-family: 'roboto', sans-serif;
     }
     
     p.header__copy{
+      color: $color1;
+      padding: .9em;
+      margin: auto;
+      max-width: 500px;
+      background-color: rgba(#FFF,.8);
+      box-shadow: 0 0 10px 2px #FFF;
       text-align: justify;
       text-indent: 25px;
+      line-height: 1.2em;
+      font-family: 'Pangolin',sans-serif;
     }
   }
 
@@ -54,18 +66,15 @@ header{
     .continue__title{
       color: $color2;
       font-size: 2em;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
     
     a.continue__button{
-      $flechaW : 5px;
-
-      display: block;
-      width: $flechaW*10;
-      height: $flechaW*10;
-      border-right: $flechaW solid red;
-      border-bottom: $flechaW solid red;
-
+      position: relative;
+      color: red;
+      font-size: 5em;
+      height: 50px;
+      overflow: hidden;
       animation: botar .8s ease-in infinite alternate;
     }
   }
@@ -73,9 +82,9 @@ header{
 
 @keyframes botar {
   from{
-    transform: translateY(0) rotate(45deg);
+    top: 0;
   }
   to{
-    transform: translateY(-20px) rotate(45deg);
+    top:-20px;
   }
 }
