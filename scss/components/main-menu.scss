@@ -1,18 +1,43 @@
 
 nav.main-nav{
   position: absolute;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 100;
+  background-color: $color3;
+  
+  .search{
+    display: flex;
+    align-items: center;
+
+    &__input{
+      height: 20px;
+      border-radius: 10px;
+      border: none;
+      color: #666;
+      font-size: .8em;
+      padding-left: 1em;
+      letter-spacing: 3px;
+    }
+    
+    &__icon{
+      color: #FFF;
+      margin: 0 20px;
+      font-size: 1.2em;
+    }
+  }
 }
-ul.main-menu{
+nav ul.main-menu{
+  width: 50%;
   margin: 0;
   padding: 0;
 
   display: flex;
   justify-content: space-around;
-  background-color: $color3;
+
   
   li{
     display: block;
@@ -22,10 +47,6 @@ ul.main-menu{
     list-style: none;
     border-right: 1px solid white;
 
-    &:last-child{
-      border: none;
-    }
-
     a{
 
       display: block;
@@ -34,6 +55,11 @@ ul.main-menu{
       text-decoration: none;
 
       color: #FFF;
+
+      &:hover{
+        background: #FFF;
+        color: $color3;
+      }
     }
     
     a.active{

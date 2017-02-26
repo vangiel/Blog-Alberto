@@ -59,7 +59,7 @@ header{
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: 5%;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     
@@ -73,7 +73,7 @@ header{
       position: relative;
       color: red;
       font-size: 5em;
-      height: 50px;
+      height: 70px;
       overflow: hidden;
       animation: botar .8s ease-in infinite alternate;
     }
@@ -83,6 +83,7 @@ header{
 @keyframes botar {
   from{
     top: 0;
+    font-size: 6em;
   }
   to{
     top:-20px;

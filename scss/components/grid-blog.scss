@@ -1,4 +1,48 @@
+$gutter : 10px;
+
+
+@function itemWidth ($columns, $gutter : 1em){
+  @return calc((100% / #{$columns}) - #{$gutter});
+}
+
+
 main.grid-blog{
-  height: 100vh;
-  background-color: rgba($color2, .7);
+  background: url("../img/background.jpg") no-repeat center fixed;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+
+  .blog-input{
+    box-sizing: border-box;
+    width: itemWidth(4,$gutter);
+    margin: $gutter / 2;
+    background: rgba(#FFF, .7);
+    padding: 8px;
+
+    @media screen and (max-width: map_get($breakpoints, l)){
+      width: itemWidth(3,$gutter);
+    }
+    
+    @media screen and (max-width: map_get($breakpoints, m)){
+      width: itemWidth(2,$gutter);
+    }
+
+    @media screen and (max-width: map_get($breakpoints, s)){
+      width: itemWidth(1,$gutter);
+    }
+
+    &__img{
+      width: 100%;
+    }
+
+    &__copy{
+      font-size: .7em;
+    }
+    
+    &__button{
+      display: block;
+      text-align: right;
+      font-size: .8em;
+    }
+  }
 }
