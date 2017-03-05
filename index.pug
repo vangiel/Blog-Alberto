@@ -2,15 +2,17 @@ extends templates/template
 
 block menu
   nav.main-nav
+    label(for="menu").icon-menu
+    input(id="menu" type="checkbox").check
     ul.main-menu
       li: a(href="index.html").active Inicio
-      li: a(href="#") Articulos
-      li: a(href="#") Sobre mi
-      li: a(href="#") Contacto
-    .search
-      input(type="text" name="search" value="Buscar...").search__input
-      .icon-search.search__icon
-      //input(type="submit").icon-search.search__icon
+      li: a(href="/html/articles/articles.html") Articulos
+      li: a(href="/html/about/about.html") Sobre mi
+      li: a(href="/html/contact/contact.html") Contacto
+    form.search
+      input(type="text" name="search" placeholder="Buscar...").search__input
+      input(id = "buscar" type = "submit").search__submit
+      label(for="buscar").icon-search.search__icon
 
 block gridInputs
   main#main-blog.grid-blog
@@ -63,5 +65,7 @@ block gridInputs
   .paginas
 
 block footer
+
+
 
 

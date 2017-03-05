@@ -16,17 +16,19 @@ Created by Daniel on 15/02/2017.
   </head>
   <body>
     <nav class="main-nav">
+      <label class="icon-menu" for="menu"></label>
+      <input class="check" id="menu" type="checkbox">
       <ul class="main-menu">
         <li><a class="active" href="index.html">Inicio</a></li>
-        <li><a href="#">Articulos</a></li>
-        <li><a href="#">Sobre mi</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="/html/articles/articles.html">Articulos</a></li>
+        <li><a href="/html/about/about.html">Sobre mi</a></li>
+        <li><a href="/html/contact/contact.html">Contacto</a></li>
       </ul>
-      <div class="search">
-        <input class="search__input" type="text" name="search" value="Buscar...">
-        <div class="icon-search search__icon"></div>
-        <!--input(type="submit").icon-search.search__icon-->
-      </div>
+      <form class="search">
+        <input class="search__input" type="text" name="search" placeholder="Buscar...">
+        <input class="search__submit" id="buscar" type="submit">
+        <label class="icon-search search__icon" for="buscar"></label>
+      </form>
     </nav>
     <header><img src="img/portada.jpeg" alt="imagen de trading">
       <div class="header-title__container">

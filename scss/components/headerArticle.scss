@@ -1,8 +1,10 @@
 header{
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  margin: $heightNav auto;
   text-align: center;
-  margin-top: 4em;
+  img{
+    width: 100%;
+  }
 }
 
 .contenido{

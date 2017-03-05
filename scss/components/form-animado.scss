@@ -1,0 +1,67 @@
+$colorTexto : rgba(#000, .3);
+
+
+.formulario{
+  width: 500px;
+  max-width: 100%;
+  margin: 15vh auto;
+  padding: 20px;
+  box-shadow: 0 0 20px 1px $colorTexto;
+  position: relative;
+
+  &__titulo {
+    text-align: center;
+    margin-top: 0;
+    color: rgba(#000,.7);
+  }
+
+  &__input, &__label, &__submit{
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+  }
+
+  &__input{
+    padding: 20px;
+    border: 1px solid $colorTexto;
+    margin-bottom: 40px;
+    background: rgba(#000, 0.1);
+
+    &:focus{
+      outline: 1px solid rgba(#000, .7);
+    }
+
+    &:focus + .formulario__label{
+      margin-top: -135px;
+    }
+  }
+
+  &__textarea{
+    resize: vertical;
+  }
+
+  &__label{
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -85px;
+    z-index: -20;
+    color: rgba(#000, .5);
+    transition: all .8s;
+  }
+
+  &__submit{
+    background: rgba(#000, .7);
+    color: #FFF;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+
+    &:hover{
+      background: rgba(#000, .8);
+    }
+  }
+}
+
+.fijar {
+  margin-top: -135px;
+}

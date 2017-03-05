@@ -3,6 +3,7 @@ header{
   overflow: hidden;
   margin: auto;
   width: 100%;
+  box-shadow: 0 5px 50px 0 rgba($color3,07);
   
   &::before{
     content: '';
@@ -38,6 +39,9 @@ header{
       text-transform: uppercase;
       font-size: 4em;
       font-family: 'roboto', sans-serif;
+      @media screen and (max-width: map_get($breakpoints,m)){
+        font-size: 2.5em;
+      }
     }
     
     p.header__copy{
@@ -51,6 +55,9 @@ header{
       text-indent: 25px;
       line-height: 1.2em;
       font-family: 'Pangolin',sans-serif;
+      @media screen and (max-width: map_get($breakpoints,m)){
+        display: none;
+      }
     }
   }
 
@@ -62,6 +69,7 @@ header{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+
     
     .continue__title{
       color: $color2;
@@ -87,5 +95,11 @@ header{
   }
   to{
     top:-20px;
+  }
+}
+
+@media screen and (max-width: map_get($breakpoints,m)){
+  .header-continue{
+    bottom: 20% !important;
   }
 }

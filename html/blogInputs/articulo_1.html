@@ -16,25 +16,36 @@ Created by Daniel on 24/02/2017.
   </head>
   <body>
     <nav class="main-nav">
+      <label class="icon-menu" for="menu"></label>
+      <input class="check" id="menu" type="checkbox">
       <ul class="main-menu">
         <li><a href="../../index.html">Inicio</a></li>
-        <li><a href="#">Articulos</a></li>
-        <li><a href="#">Sobre mi</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="../articles/articles.html">Articulos</a></li>
+        <li><a href="../about/about.html">Sobre mi</a></li>
+        <li><a href="../contact/contact.html">Contacto</a></li>
       </ul>
-      <div class="search">
-        <input class="search__input" type="text" name="search" value="Buscar...">
-        <div class="icon-search search__icon"></div>
-        <!--input(type="submit").icon-search.search__icon-->
-      </div>
+      <form class="search">
+        <input class="search__input" type="text" name="search" placeholder="Buscar...">
+        <input class="search__submit" id="buscar" type="submit">
+        <label class="icon-search search__icon" for="buscar"></label>
+      </form>
     </nav>
-    <header><img src="../../img/blog.jpeg">
+    <header><img src="../../img/articulo1.jpg">
       <h1 class="tittle">Entrada del 29 de febrero</h1>
     </header>
     <div class="contenido">
       <p>Heu. Ubi est superbus detrius? Assimilant semper ducunt ad ferox racana. Regius, rusticus cliniass superbe fallere de teres, salvus burgus. Cur exsul messis? Cur lanista ire? Vae. Ubi est festus zeta? Fidelis nomens ducunt ad gluten. Bi-color, lotus urbss aegre desiderium de camerarius, fortis habitio. Cum burgus messis, omnes sectames visum superbus, grandis pulchritudinees. Sunt guttuses visum audax, gratis ollaes. Pol, a bene rumor. Magnum imber rare locuss calcaria est. A falsis, rector camerarius zirbus. Demissios ortum, tanquam placidus accola. Heu, lotus burgus! Musa castus zirbus est. Extums manducare, tanquam audax gemna. Adiurators peregrinationes! Accelerare tandem ducunt ad camerarius ventus. Ventus ires, tanquam placidus byssus. Cum classis messis, omnes fiscinaes magicae superbus, teres demissioes. Visuss assimilant in camerarius cubiculum! Heu, placidus impositio! Impositios credere in regius mare! Quadra, guttus, et axona. Altus gluten virtualiter reperires era est. Nunquam visum acipenser. Eheu, albus fortis! Est albus hydra, cesaris. A falsis, clabulare domesticus onus. Elevatus superbus onus est. Lotus, dexter ionicis tormentos sapienter reperire de peritus, velox devatio.</p>
       <p>Heu. Ubi est superbus detrius? Assimilant semper ducunt ad ferox racana. Regius, rusticus cliniass superbe fallere de teres, salvus burgus. Cur exsul messis? Cur lanista ire? Vae. Ubi est festus zeta? Fidelis nomens ducunt ad gluten. Bi-color, lotus urbss aegre desiderium de camerarius, fortis habitio. Cum burgus messis, omnes sectames visum superbus, grandis pulchritudinees. Sunt guttuses visum audax, gratis ollaes. Pol, a bene rumor. Magnum imber rare locuss calcaria est. A falsis, rector camerarius zirbus. Demissios ortum, tanquam placidus accola. Heu, lotus burgus! Musa castus zirbus est. Extums manducare, tanquam audax gemna. Adiurators peregrinationes! Accelerare tandem ducunt ad camerarius ventus. Ventus ires, tanquam placidus byssus. Cum classis messis, omnes fiscinaes magicae superbus, teres demissioes. Visuss assimilant.</p>
       <p>Heu. Ubi est superbus detrius? Assimilant semper ducunt ad ferox racana. Regius, rusticus cliniass superbe fallere de teres, salvus burgus. Cur exsul messis? Cur lanista ire? Vae. Ubi est festus zeta? Fidelis nomens ducunt ad gluten. Bi-color, lotus urbss aegre desiderium de camerarius, fortis habitio. Cum burgus messis, omnes sectames visum superbus, grandis pulchritudinees. Sunt guttuses visum audax, gratis ollaes. Pol, a bene rumor. Magnum imber rare locuss calcaria est. A falsis, rector camerarius zirbus. Demissios ortum, tanquam placidus accola. Heu, lotus burgus! Musa castus zirbus est. Extums manducare, tanquam audax gemna. Adiurators peregrinationes! Accelerare tandem ducunt ad camerarius ventus. Ventus ires, tanquam placidus byssus. Cum classis messis, omnes fiscinaes magicae superbus, teres demissioes. Visuss assimilant in camerarius cubiculum! Heu, placidus impositio! Impositios credere in regius mare! Quadra, guttus, et axona. Altus gluten virtualiter reperires era est. Nunquam visum acipenser. Eheu, albus fortis! Est albus hydra, cesaris. A falsis, clabulare domesticus onus. Elevatus superbus onus est. Lotus, dexter ionicis tormentos sapienter reperire de peritus, velox devatio.</p>
+    </div>
+    <div class="coments-container">
+      <!--
+      Created by Daniel on 27/02/2017.
+      
+      -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript" src="../../js/disqus.js"></script>
+      <noscript>enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
   </body>
 </html>

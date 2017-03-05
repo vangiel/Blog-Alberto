@@ -1,0 +1,15 @@
+extends templates/templateContact
+
+block form
+  form.formulario
+    h1.formulario__titulo Contáctame
+    input(type="text").formulario__input
+    label.formulario__label Nombre
+    input(type="text").formulario__input
+    label.formulario__label Apellidos
+    input(type="email").formulario__input
+    label.formulario__label Correo
+    textarea(rows="1").formulario__input.formulario__textarea
+    label.formulario__label Mensaje
+    input(type="submit").formulario__submit
+

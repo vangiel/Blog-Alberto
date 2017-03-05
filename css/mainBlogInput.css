@@ -402,6 +402,11 @@ template {
 [hidden] {
   display: none; }
 
+nav.main-nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0; }
+
 nav.main-nav {
   position: absolute;
   display: -webkit-flex;
@@ -411,10 +416,13 @@ nav.main-nav {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
+  height: 50px;
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #88AC2E; }
+  background-color: #88AC2E;
+  transition: all 60s;
+  box-shadow: 0 5px 10px 0 rgba(136, 172, 46, 0.7); }
   nav.main-nav .search {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -422,6 +430,8 @@ nav.main-nav {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
+    nav.main-nav .search__submit {
+      display: none; }
     nav.main-nav .search__input {
       height: 20px;
       border-radius: 10px;
@@ -429,11 +439,12 @@ nav.main-nav {
       color: #666;
       font-size: .8em;
       padding-left: 1em;
-      letter-spacing: 3px; }
+      letter-spacing: 2px; }
     nav.main-nav .search__icon {
       color: #FFF;
       margin: 0 20px;
-      font-size: 1.2em; }
+      font-size: 1.2em;
+      cursor: pointer; }
 
 nav ul.main-menu {
   width: 50%;
@@ -454,6 +465,7 @@ nav ul.main-menu {
     border-right: 1px solid white; }
     nav ul.main-menu li a {
       display: block;
+      height: 100%;
       line-height: 3em;
       text-decoration: none;
       color: #FFF; }
@@ -464,11 +476,45 @@ nav ul.main-menu {
       background: #FFF;
       color: #88AC2E; }
 
+nav input.check {
+  display: none; }
+
+nav .icon-menu {
+  display: none;
+  color: #FFF;
+  font-size: 2em;
+  line-height: 1.5em;
+  margin-left: 15px;
+  cursor: pointer; }
+
+@media screen and (max-width: 640px) {
+  nav .icon-menu {
+    display: block; }
+  nav ul.main-menu {
+    position: absolute;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: rgba(136, 172, 46, 0.8);
+    top: 40px;
+    left: -81%;
+    width: 80%;
+    transition: all .4s; }
+    nav ul.main-menu li {
+      border: none;
+      border-bottom: 1px solid #FFF; }
+  nav input.check:checked + ul.main-menu {
+    left: 0; } }
+
+nav.main-nav {
+  position: fixed; }
+
 header {
-  width: 90%;
-  margin: auto;
-  text-align: center;
-  margin-top: 4em; }
+  width: 100%;
+  margin: 50px auto;
+  text-align: center; }
+  header img {
+    width: 100%; }
 
 .contenido {
   width: 90%;
@@ -476,3 +522,8 @@ header {
   margin: auto;
   text-align: justify;
   margin-bottom: 2em; }
+
+.coments-container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px; }

@@ -18,6 +18,12 @@ $breakpoints : (
 
 @import "components/normalize";
 
+*, body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 //Components
 
 @import "components/main-menu";
@@ -26,12 +32,4 @@ nav.main-nav{
   position: fixed;
 }
 
-@import "components/headerArticle";
-
-//Comentarios
-
-.coments-container{
-  width: 90%;
-  margin: auto;
-  max-width: 1200px;
-}
+@import "components/form-animado";

@@ -1,4 +1,4 @@
-$gutter : 10px;
+$gutter : 20px;
 
 
 @function itemWidth ($columns, $gutter : 1em){
@@ -7,10 +7,11 @@ $gutter : 10px;
 
 
 main.grid-blog{
-  background: url("../img/background.jpg") no-repeat center fixed;
+  background-image: url("../img/background.jpeg");
   display: flex;
   flex-wrap: wrap;
   padding: 1em;
+  padding-top: 3em;
 
   .blog-input{
     box-sizing: border-box;
@@ -20,14 +21,10 @@ main.grid-blog{
     padding: 8px;
 
     @media screen and (max-width: map_get($breakpoints, l)){
-      width: itemWidth(3,$gutter);
+      width: itemWidth(2,$gutter);
     }
     
     @media screen and (max-width: map_get($breakpoints, m)){
-      width: itemWidth(2,$gutter);
-    }
-
-    @media screen and (max-width: map_get($breakpoints, s)){
       width: itemWidth(1,$gutter);
     }
 
