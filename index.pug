@@ -6,9 +6,9 @@ block menu
     input(id="menu" type="checkbox").check
     ul.main-menu
       li: a(href="index.html").active Inicio
-      li: a(href="/html/articles/articles.html") Articulos
-      li: a(href="/html/about/about.html") Sobre mi
-      li: a(href="/html/contact/contact.html") Contacto
+      li: a(href="html/articles/articles.html") Articulos
+      li: a(href="html/about/about.html") Sobre mi
+      li: a(href="html/contact/contact.html") Contacto
     form.search
       input(type="text" name="search" placeholder="Buscar...").search__input
       input(id = "buscar" type = "submit").search__submit
@@ -17,50 +17,104 @@ block menu
 block gridInputs
   main#main-blog.grid-blog
     .blog-input
-      img(src="img/blog.jpeg").blog-input__img
-      h3.blog-input__title Operación 16-15-2017
-      p.blog-input__copy Cum galatae crescere, omnes stellaes aperto magnum, camerarius cedriumes. onus trabems, tanquam peritus magister. studere saepe ducunt ad nobilis rumor. mirabilis, fidelis orgias sed mire demitto de azureus, gratis lura.
-      a(href="html/blogInputs/articulo_1.html").blog-input__button Seguir leyendo...
+      .blog-input__date
+        p 09
+        p mar
+        p 2017
+      .img-container
+        img(src="img/operativas/09-03-2017.png").blog-input__img
+      .copy-container
+        h3.blog-input__title Operativa DAX
+        p.blog-input__copy Al inicio de la sesión, el precio se choca con una zona de soporte clara anterior, e inicia un impulso al alza. Espero al retroceso en la zona fijada y entro en el mini A. Finalmente me cierra en Break-even, ya que baja a hacer un mini C.
+        a(href="html/blogInputs/09-03-2017.html").blog-input__button Seguir leyendo...
     .blog-input
-      img(src="img/blog.jpeg").blog-input__img
-      h3.blog-input__title Operación 16-15-2017
-      p.blog-input__copy Cum galatae crescere, omnes stellaes aperto magnum, camerarius cedriumes. onus trabems, tanquam peritus magister. studere saepe ducunt ad nobilis rumor. mirabilis, fidelis orgias sed mire demitto de azureus, gratis lura.
-      a(href="#").blog-input__button Seguir leyendo...
+      .blog-input__date
+        p 08
+        p mar
+        p 2017
+      .img-container
+        img(src="img/operativas/08-03-2017.png").blog-input__img
+      .copy-container
+        h3.blog-input__title Operativa Dow Jones
+        p.blog-input__copy En la apertura, el precio se choca con una resistencia anterior e inicia un impulso a la baja. Aparecen unas velas de rango estrecho con volumen sin desplazar, lo que preveía un retroceso como mínimo. Finalmente lo hace y vuelve a testear el volumen de apertura, definiendo así, un claro lateral.
+        a(href="html/blogInputs/08-03-2017.html").blog-input__button Seguir leyendo...
     .blog-input
-      img(src="img/blog.jpeg").blog-input__img
-      h3.blog-input__title Operación 16-15-2017
-      p.blog-input__copy Cum galatae crescere, omnes stellaes aperto magnum, camerarius cedriumes. onus trabems, tanquam peritus magister. studere saepe ducunt ad nobilis rumor. mirabilis, fidelis orgias sed mire demitto de azureus, gratis lura.
-      a(href="#").blog-input__button Seguir leyendo...
+      .blog-input__date
+        p 08
+        p mar
+        p 2017
+      .img-container
+        img(src="img/operativas/08-03-2017.png").blog-input__img
+      .copy-container
+        h3.blog-input__title Operativa Dow Jones
+        p.blog-input__copy En la apertura, el precio se choca con una resistencia anterior e inicia un impulso a la baja. Aparecen unas velas de rango estrecho con volumen sin desplazar, lo que preveía un retroceso como mínimo. Finalmente lo hace y vuelve a testear el volumen de apertura, definiendo así, un claro lateral.
+        a(href="html/blogInputs/articulo_1.html").blog-input__button Seguir leyendo...
     .blog-input
-      img(src="img/blog.jpeg").blog-input__img
-      h3.blog-input__title Operación 16-15-2017
-      p.blog-input__copy Cum galatae crescere, omnes stellaes aperto magnum, camerarius cedriumes. onus trabems, tanquam peritus magister. studere saepe ducunt ad nobilis rumor. mirabilis, fidelis orgias sed mire demitto de azureus, gratis lura.
-      a(href="#").blog-input__button Seguir leyendo...
+      .blog-input__date
+        p 08
+        p mar
+        p 2017
+      .img-container
+        img(src="img/operativas/08-03-2017.png").blog-input__img
+      .copy-container
+        h3.blog-input__title Operativa Dow Jones
+        p.blog-input__copy En la apertura, el precio se choca con una resistencia anterior e inicia un impulso a la baja. Aparecen unas velas de rango estrecho con volumen sin desplazar, lo que preveía un retroceso como mínimo. Finalmente lo hace y vuelve a testear el volumen de apertura, definiendo así, un claro lateral.
+        a(href="html/blogInputs/articulo_1.html").blog-input__button Seguir leyendo...
     .blog-input
-      img(src="img/blog.jpeg").blog-input__img
-      h3.blog-input__title Operación 16-15-2017
-      p.blog-input__copy Cum galatae crescere, omnes stellaes aperto magnum, camerarius cedriumes. onus trabems, tanquam peritus magister. studere saepe ducunt ad nobilis rumor. mirabilis, fidelis orgias sed mire demitto de azureus, gratis lura.
-      a(href="#").blog-input__button Seguir leyendo...
+      .blog-input__date
+        p 08
+        p mar
+        p 2017
+      .img-container
+        img(src="img/operativas/08-03-2017.png").blog-input__img
+      .copy-container
+        h3.blog-input__title Operativa Dow Jones
+        p.blog-input__copy En la apertura, el precio se choca con una resistencia anterior e inicia un impulso a la baja. Aparecen unas velas de rango estrecho con volumen sin desplazar, lo que preveía un retroceso como mínimo. Finalmente lo hace y vuelve a testear el volumen de apertura, definiendo así, un claro lateral.
+        a(href="html/blogInputs/articulo_1.html").blog-input__button Seguir leyendo...
     .blog-input
-      img(src="img/blog.jpeg").blog-input__img
-      h3.blog-input__title Operación 16-15-2017
-      p.blog-input__copy Cum galatae crescere, omnes stellaes aperto magnum, camerarius cedriumes. onus trabems, tanquam peritus magister. studere saepe ducunt ad nobilis rumor. mirabilis, fidelis orgias sed mire demitto de azureus, gratis lura.
-      a(href="#").blog-input__button Seguir leyendo...
+      .blog-input__date
+        p 08
+        p mar
+        p 2017
+      .img-container
+        img(src="img/operativas/08-03-2017.png").blog-input__img
+      .copy-container
+        h3.blog-input__title Operativa Dow Jones
+        p.blog-input__copy En la apertura, el precio se choca con una resistencia anterior e inicia un impulso a la baja. Aparecen unas velas de rango estrecho con volumen sin desplazar, lo que preveía un retroceso como mínimo. Finalmente lo hace y vuelve a testear el volumen de apertura, definiendo así, un claro lateral.
+        a(href="html/blogInputs/articulo_1.html").blog-input__button Seguir leyendo...
     .blog-input
-      img(src="img/blog.jpeg").blog-input__img
-      h3.blog-input__title Operación 16-15-2017
-      p.blog-input__copy Cum galatae crescere, omnes stellaes aperto magnum, camerarius cedriumes. onus trabems, tanquam peritus magister. studere saepe ducunt ad nobilis rumor. mirabilis, fidelis orgias sed mire demitto de azureus, gratis lura.
-      a(href="#").blog-input__button Seguir leyendo...
+      .blog-input__date
+        p 08
+        p mar
+        p 2017
+      .img-container
+        img(src="img/operativas/08-03-2017.png").blog-input__img
+      .copy-container
+        h3.blog-input__title Operativa Dow Jones
+        p.blog-input__copy En la apertura, el precio se choca con una resistencia anterior e inicia un impulso a la baja. Aparecen unas velas de rango estrecho con volumen sin desplazar, lo que preveía un retroceso como mínimo. Finalmente lo hace y vuelve a testear el volumen de apertura, definiendo así, un claro lateral.
+        a(href="html/blogInputs/articulo_1.html").blog-input__button Seguir leyendo...
     .blog-input
-      img(src="img/blog.jpeg").blog-input__img
-      h3.blog-input__title Operación 16-15-2017
-      p.blog-input__copy Cum galatae crescere, omnes stellaes aperto magnum, camerarius cedriumes. onus trabems, tanquam peritus magister. studere saepe ducunt ad nobilis rumor. mirabilis, fidelis orgias sed mire demitto de azureus, gratis lura.
-      a(href="#").blog-input__button Seguir leyendo...
+      .blog-input__date
+        p 08
+        p mar
+        p 2017
+      .img-container
+        img(src="img/operativas/08-03-2017.png").blog-input__img
+      .copy-container
+        h3.blog-input__title Operativa Dow Jones
+        p.blog-input__copy En la apertura, el precio se choca con una resistencia anterior e inicia un impulso a la baja. Aparecen unas velas de rango estrecho con volumen sin desplazar, lo que preveía un retroceso como mínimo. Finalmente lo hace y vuelve a testear el volumen de apertura, definiendo así, un claro lateral.
+        a(href="html/blogInputs/articulo_1.html").blog-input__button Seguir leyendo...
     .blog-input
-      img(src="img/blog.jpeg").blog-input__img
-      h3.blog-input__title Operación 16-15-2017
-      p.blog-input__copy Cum galatae crescere, omnes stellaes aperto magnum, camerarius cedriumes. onus trabems, tanquam peritus magister. studere saepe ducunt ad nobilis rumor. mirabilis, fidelis orgias sed mire demitto de azureus, gratis lura.
-      a(href="#").blog-input__button Seguir leyendo...
+      .blog-input__date
+        p 08
+        p mar
+        p 2017
+      .img-container
+        img(src="img/operativas/08-03-2017.png").blog-input__img
+      .copy-container
+        h3.blog-input__title Operativa Dow Jones
+        p.blog-input__copy En la apertura, el precio se choca con una resistencia anterior e inicia un impulso a la baja. Aparecen unas velas de rango estrecho con volumen sin desplazar, lo que preveía un retroceso como mínimo. Finalmente lo hace y vuelve a testear el volumen de apertura, definiendo así, un claro lateral.
+        a(href="html/blogInputs/articulo_1.html").blog-input__button Seguir leyendo...
 
   .paginas
 

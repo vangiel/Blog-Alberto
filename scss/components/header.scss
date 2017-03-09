@@ -47,14 +47,16 @@ header{
     p.header__copy{
       color: $color1;
       padding: .9em;
-      margin: auto;
+      margin: 150px auto;
       max-width: 500px;
       background-color: rgba(#FFF,.8);
       box-shadow: 0 0 10px 2px #FFF;
       text-align: justify;
       text-indent: 25px;
-      line-height: 1.2em;
+      line-height: 1.8em;
+      letter-spacing: 2px;
       font-family: 'Pangolin',sans-serif;
+      font-size: 1.2em;
       @media screen and (max-width: map_get($breakpoints,m)){
         display: none;
       }

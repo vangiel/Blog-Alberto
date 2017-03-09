@@ -511,14 +511,17 @@ nav.main-nav {
 
 header {
   width: 100%;
-  margin: 50px auto;
+  margin: 5em auto;
   text-align: center; }
   header img {
-    width: 100%; }
+    width: 100%;
+    border: 1px solid #C0D028;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in; }
 
 .contenido {
   width: 90%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: auto;
   text-align: justify;
   margin-bottom: 2em; }
@@ -526,4 +529,4 @@ header {
 .coments-container {
   width: 90%;
   margin: auto;
-  max-width: 1200px; }
+  max-width: 900px; }
