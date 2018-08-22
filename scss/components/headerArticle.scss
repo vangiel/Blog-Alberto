@@ -16,3 +16,36 @@ header{
   text-align: justify;
   margin-bottom: 2em;
 }
+
+.resultado{
+  text-align: center;
+
+  &__container{
+    display: flex;
+    justify-content: center;
+
+    .resultado__item{
+      $cuadrado : 80px;
+      height: $cuadrado;
+      width: $cuadrado;
+      margin: 10px;
+      font-size: 1.5em;
+      color: #FFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+    
+    .positivo{
+      background: $color2;
+    }
+
+    .negativo{
+      background: tomato;
+    }
+  
+  }
+}
+

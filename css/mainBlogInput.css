@@ -526,6 +526,37 @@ header {
   text-align: justify;
   margin-bottom: 2em; }
 
+.resultado {
+  text-align: center; }
+  .resultado__container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .resultado__container .resultado__item {
+      height: 80px;
+      width: 80px;
+      margin: 10px;
+      font-size: 1.5em;
+      color: #FFF;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-radius: 20px;
+      font-weight: bold; }
+    .resultado__container .positivo {
+      background: #C0D028; }
+    .resultado__container .negativo {
+      background: tomato; }
+
 .coments-container {
   width: 90%;
   margin: auto;
